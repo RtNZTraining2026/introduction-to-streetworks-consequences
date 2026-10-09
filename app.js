@@ -106,7 +106,7 @@ titles.forEach((title, index) => {
   const choice = document.createElement('button');
   choice.type = 'button';
   choice.className = 'choice';
-  choice.textContent = `${index + 1} · ${title}`;
+  choice.textContent = `${index + 1} · ${title} Consequences`;
   choice.dataset.index = index;
   choice.setAttribute('aria-controls', 'consequencePanel');
   choice.addEventListener('click', () => select(index, true));
