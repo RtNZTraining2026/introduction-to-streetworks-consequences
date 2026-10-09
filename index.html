@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Streetworks Consequences Explorer</title>
+<meta name="description" content="Explore nine wider consequences of streetworks through an interactive illustration, short videos and six-stage consequence propagation pathways.">
+<link rel="stylesheet" href="styles.css?v=13">
+<link rel="stylesheet" href="propagation.css?v=5">
+<script src="scpf-data.js?v=2" defer></script>
+<script src="app.js?v=14" defer></script>
+</head>
+<body>
+<header>
+<div class="eyebrow">Streetworks / Roadworks · Training Resource</div>
+<h1 id="page-title">One Work Site.<span>A Street Full Of Consequences.</span></h1>
+<p>Works keep our streets and services functioning. Their consequences can reach beyond the barriers, affecting journeys, everyday life and the local environment.</p>
+<p class="intro-line">Click a numbered point to explore how streetworks consequences can spread.</p>
+</header>
+<main>
+<p class="training-note">The figures and media are for illustration and training purposes only.</p>
+<div class="explorer">
+<section aria-label="Interactive streetworks illustration">
+<div class="scene"><img src="assets/streetworks.png" alt="Illustrated streetworks scene with shops, traffic, a bus, delivery van, pedestrians, trees and wildlife."><div id="markers"></div></div>
+<p class="hint">Choose a point in the illustration or use the buttons below. <span id="exploredCount" class="explored-count">0 / 9 Explored</span></p>
+<nav class="choices" id="choices" aria-label="Nine consequences"></nav>
+</section>
+<aside class="panel" id="consequencePanel" aria-labelledby="title">
+<div class="detail-kicker"><div class="tag" id="tag"></div><span class="planning-lens">Planning Lens</span></div><h2 id="title"></h2>
+<p id="consequenceIntro" class="consequence-intro"></p>
+<div id="videoWrap">
+<video id="video" controls playsinline muted preload="metadata" aria-label="Loading bay and delivery example"><source id="videoSource" src="assets/loading-bay.mp4?v=6" type="video/mp4"></video>
+<p class="videoNote" id="videoNote">Five-second illustrative animation: loading activity can interrupt traffic movement.</p>
+<button type="button" class="replay" id="replay">↻ Replay Video</button>
+</div>
+<p class="videoNote" id="pending" hidden>Explore the explanation below. A video will be added for this consequence.</p>
+<div id="details"></div>
+<nav class="panel-nav" aria-label="Consequence navigation"><button type="button" id="previous">Previous Consequence</button><span id="counter"></span><button type="button" id="next">Next Consequence</button></nav>
+</aside>
+</div>
+<p class="sr-only" id="announcement" role="status" aria-live="polite" aria-atomic="true"></p>
+<p class="explorer-note">Consequences vary with location, timing, duration and management.</p>
+<section class="definitions" id="definitions" aria-labelledby="definitions-title">
+      <div class="definitions-intro"><p class="eyebrow">The UK Context</p><h2 id="definitions-title">Streetworks Or Roadworks?</h2><p>The Department for Transport distinguishes between work on services and work on the highway itself.</p><a class="source-link" href="https://www.gov.uk/government/collections/street-works" target="_blank" rel="noopener noreferrer">Read The GOV.UK Descriptions</a></div>
+      <article class="definition-card"><span class="definition-type">01 / Services</span><h3>Streetworks</h3><p>Work on or beneath a street to install, maintain or repair services. The Department for Transport describes these as works by statutory undertakers, including utility companies, licensed operators and contractors.</p><p class="example"><strong>For Example</strong>Water pipes, electricity cables and telecommunications equipment.</p></article>
+      <article class="definition-card"><span class="definition-type">02 / The Highway</span><h3>Roadworks</h3><p>Work to maintain or improve the highway itself. This includes the road surface, footways and pavements, as well as street lighting.</p><p class="example"><strong>For Example</strong>Road resurfacing, footway repairs and highway improvements.</p></article>
+    </section>
+<section class="connected-note" aria-labelledby="connected-title"><div><p class="eyebrow">The Planning Principle</p><h2 id="connected-title">Reduce Disruption.<br>Keep The Whole Street In View.</h2></div><p>A narrowed road can delay a bus. A longer journey can change how someone travels. A blocked footway can affect who can reach a shop. Looking across the street helps reveal these connections.</p><section class="framework-context" aria-labelledby="framework-notes-title"><h3 id="framework-notes-title">Notes</h3><p>Each consequence element has a different role in how consequences spread. Some are immediate changes caused by the works. Others reflect how people and systems respond, which can lead to further consequences. Some effects appear later, remain hidden or shift to another place or time.</p><p>The Streetworks Consequence Propagation Framework (SCPF) follows six layers: intervention, immediate physical disturbance, system response, human or system adaptation, observed operational outcomes, and hidden or secondary consequences. It distinguishes forward propagation, adaptation or feedback, and hidden or transferred pathways. Element colours indicate their role in the selected example; evidence strength is separate. White elements may also suggest possible responses or outcomes beyond the retained case-study map. The core relationships draw on Figure 7 and Table A6 of Kelwalee Kenn Jutipanya’s full SCPF manuscript. Biodiversity and street-tree examples are context-specific extensions outside the retained core map for the gas main replacement streetworks case study using a minimum-dig method. <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7351247" target="_blank" rel="noopener noreferrer">SCPF Working Paper On SSRN</a>.</p></section></section>
+</main>
+<footer>Concept, Illustration and Course Design: Kelwalee Kenn Jutipanya and Bryony Bowman · 2026<br>Illustration source credit is retained in the supplied image. For training use.</footer>
+</body>
+</html>
