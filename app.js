@@ -1,7 +1,7 @@
 'use strict';
 
 // Keep the video explorer's labels and marker positions with the recovered SCPF data.
-const titles = ['Biodiversity', 'Commercial Unit', 'Congestion', 'Direct Emissions', 'Loading Bay/Delivery', 'Non-Motorised', 'Public Transport', 'Resident', 'Street Trees'];
+const titles = ['Biodiversity Consequence', 'Commercial Unit Consequence', 'Congestion Consequence', 'Direct Emissions Consequence', 'Loading Bay/Delivery Consequence', 'Non-Motorised Consequence', 'Public Transport Consequence', 'Resident Consequence', 'Street Trees Consequence'];
 const positions = [[91,88], [11,56], [59,27], [47,41], [91,44], [35,65], [28,24], [92,14], [22,10]];
 const markers = document.getElementById('markers');
 const choices = document.getElementById('choices');
